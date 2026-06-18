@@ -40,6 +40,7 @@
 <tr><td>반려동물</td><td>이름, 종, 품종, 생년월일, 의료기록(예방접종·알레르기·검진 등 이용자 입력 정보)</td><td>반려동물 등록 시</td><td>선택</td></tr>
 <tr><td>반려동물 사진</td><td>이용자가 업로드한 반려동물 사진(이미지)</td><td>반려동물 사진 등록 시</td><td>선택</td></tr>
 <tr><td>AI 상담</td><td>이용자가 챗봇에 입력한 질문·대화 내용</td><td>AI 챗봇 이용 시</td><td>선택</td></tr>
+<tr><td>AI 콘텐츠 신고</td><td>이용자가 신고한 AI 답변 내용·신고 일시·이용자 식별자(유해 콘텐츠 신고 검토 목적, 탈퇴 시 파기)</td><td>AI 답변 신고 시</td><td>선택</td></tr>
 <tr><td>결제</td><td>구독 상태, 구매 토큰(Google Play·App Store 식별자)</td><td>구독 결제 시</td><td>선택</td></tr>
 <tr><td>이용기록</td><td>접속 일시(최근 접속), 서비스·AI 이용 기록(호출 일시·횟수·이용자 식별자), 오류·진단 로그(발생 이용자 식별자·오류 문맥)</td><td>서비스 이용 중</td><td>자동 수집</td></tr>
 <tr><td>소셜 연동</td><td>Apple 로그인 식별자 및 연동 토큰(계정 연동 해제 처리 목적)</td><td>Apple 로그인 시</td><td>선택</td></tr>
@@ -73,16 +74,22 @@
 <li>위치 정보: 검색 처리 후 별도 저장하지 않음</li>
 </ul>
 
-<h2>4. 개인정보의 제3자 제공 및 처리위탁(국외 이전 포함)</h2>
+<h2>4. 개인정보의 제3자 제공 및 처리위탁·국외 이전</h2>
+<p>회사는 이용자의 개인정보를 외부에 제공하지 않습니다. 다만 서비스 제공에 필요한 범위 내에서 다음의 처리위탁 및 국외 이전이 이루어집니다(개인정보 보호법 제28조의8에 따른 고지).</p>
+<ul>
+<li><strong>이전 일시 및 방법</strong>: 서비스 이용 시점에 정보통신망을 통해 전송</li>
+<li><strong>이전받는 자의 개인정보 보유·이용 기간</strong>: 위탁 목적 달성 시 또는 회원 탈퇴·위탁계약 종료 시까지</li>
+<li><strong>이전을 거부하는 방법</strong>: 회원 탈퇴 또는 고객센터(longpapa82@gmail.com) 요청으로 거부할 수 있으나, 이 경우 해당 기능(AI 상담·로그인·결제·알림 등) 이용이 제한될 수 있습니다.</li>
+</ul>
 <table>
-<tr><th>수탁자</th><th>위탁 업무</th><th>이전 항목</th></tr>
-<tr><td>Supabase Inc.</td><td>데이터베이스·인증·서버 호스팅</td><td>계정, 반려동물, AI 상담, 구독 정보</td></tr>
-<tr><td>OpenAI</td><td>AI 챗봇 응답 생성</td><td>이용자가 입력한 질문 내용</td></tr>
-<tr><td>Google LLC</td><td>인앱결제(Google Play), 광고(AdMob), 지도(시설 위치 표시), 구글 로그인</td><td>결제 식별자, 광고 식별자, 지도 표시용 시설 좌표(이용자 위치 아님), 이메일·프로필(로그인 시)</td></tr>
-<tr><td>Apple Inc.</td><td>인앱결제(App Store), Apple 로그인, 푸시 알림 발송(APNs)</td><td>결제 식별자, 이메일·이름(로그인 시), 푸시 토큰</td></tr>
-<tr><td>Kakao Corp.</td><td>카카오 소셜 로그인</td><td>이메일·닉네임·프로필(로그인 시)</td></tr>
-<tr><td>Resend (Resend, Inc.)</td><td>인증번호 이메일 발송</td><td>이메일 주소</td></tr>
-<tr><td>Expo (650 Industries, Inc.)</td><td>푸시 알림 발송</td><td>푸시 토큰(기기 식별자)</td></tr>
+<tr><th>수탁자(이전받는 자)</th><th>이전 국가</th><th>위탁 업무(이용 목적)</th><th>이전 항목</th></tr>
+<tr><td>Supabase Inc.</td><td>미국</td><td>데이터베이스·인증·서버 호스팅</td><td>계정, 반려동물, AI 상담, 구독 정보</td></tr>
+<tr><td>OpenAI, L.L.C.</td><td>미국</td><td>AI 챗봇 응답 생성</td><td>이용자가 입력한 질문 내용</td></tr>
+<tr><td>Google LLC</td><td>미국</td><td>인앱결제(Google Play), 광고(AdMob), 지도(Google Maps SDK), 구글 로그인</td><td>결제 식별자, 광고 식별자, 지도 표시용 시설 좌표 및 지도에 현재 위치를 표시하기 위한 이용자 위치(별도 저장하지 않음), 이메일·프로필(로그인 시)</td></tr>
+<tr><td>Apple Inc.</td><td>미국</td><td>인앱결제(App Store), Apple 로그인, 푸시 알림 발송(APNs)</td><td>결제 식별자, 이메일·이름(로그인 시), 푸시 토큰</td></tr>
+<tr><td>Kakao Corp.</td><td>대한민국</td><td>카카오 소셜 로그인</td><td>이메일·닉네임·프로필(로그인 시)</td></tr>
+<tr><td>Resend, Inc.</td><td>미국</td><td>인증번호 이메일 발송</td><td>이메일 주소</td></tr>
+<tr><td>Expo (650 Industries, Inc.)</td><td>미국</td><td>푸시 알림 발송</td><td>푸시 토큰(기기 식별자)</td></tr>
 </table>
 
 <h2>5. 개인정보의 파기</h2>
@@ -113,6 +120,6 @@
 <h2>11. 고지의 의무</h2>
 <p>본 방침의 내용 추가·삭제·수정이 있을 경우 시행 7일 전부터 앱 내 공지합니다.</p>
 
-<footer>본 방침은 MyPet 앱(Android, 패키지 com.longpapa82.mypet)에 적용됩니다.</footer>
+<footer>본 방침은 MyPet 앱(Android: com.longpapa82.mypet / iOS: App Store 배포본)에 동일하게 적용됩니다.</footer>
 </body>
 </html>
